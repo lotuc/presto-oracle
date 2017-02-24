@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 /*
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,17 +20,16 @@ import com.facebook.presto.plugin.jdbc.JdbcPlugin;
 
 /**
  * Initial class injected into PrestoDB via SPI.
- * 
- * @author Marcelo Paes Recg
  *
+ * @author Marcelo Paes Recg
  */
 public class OraclePlugin extends JdbcPlugin {
 
-	/**
-	 * Oracle Plugin Constructor
-	 */
-	public OraclePlugin() {
-		//name of the connector and the module implementation
-		super("oracle", new OracleClientModule());
-	}
+    /**
+     * Oracle Plugin Constructor
+     */
+    public OraclePlugin() {
+        //name of the connector and the module implementation
+        super("oracle", new OracleClientModule());
+    }
 }
